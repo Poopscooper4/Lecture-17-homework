@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 960px;
+    background-color: #141414;
+}
+
+.conteiner {
+    border-radius: 12px;
+    padding: 40px;
+    background: #1f1f1f;
+    width: 384px;
+}
+
+.topside {
+    text-align: center;
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    align-items: center;
+}
+.topside h1 {
+    color: white;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+}
+.topside h4 {
+    color: #c4f82a;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.topside span {
+    color: white;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+img {
+    width: 88px;
+    height: 88px;
+}
+.botside {
+    margin-top: 20px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.buttstyle {
+    color: white;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    width: 304px;
+    height: 45px;
+    border-radius: 8px;
+    background-color: #333333;
+    border: none;
+    transition: 0.5s;
+}
+.buttstyle:hover{
+    background-color: #C4F82A;
+    color: #333333;
+}
+@media screen and (max-width: 768px){
+    .conteiner{
+        transition: 0.5s; /*--- ეს პროსტა ლამაზად გადადიოდა და მაგიტო დავამატე */
+        width: 456px;
+    }
+    .buttstyle{
+        width: 376px;
+    }
+}
+
+
+@media screen and (max-width: 472px){
+    body{
+        padding: 24px;
+    }
+
+    
+    .conteiner{
+        transition: 0.5s; /*--- ეს პროსტა ლამაზად გადადიოდა და მაგიტო დავამატე */
+        width: 327px;
+    }
+    .buttstyle{
+        width: 270px;
+    }
+}
